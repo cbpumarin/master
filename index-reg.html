@@ -10,14 +10,20 @@
             background-image: url("img/logo.jpg");
             background-repeat: no-repeat;
             background-size: 100%;
-            background-color: black;
-            color: whitesmoke;
+            background-color: #07080a;
+            color: #d8dadb;
         }
         h1{
-            padding-left: 1.5em;
-            padding-top: 10em;
+            padding-left: 3%;
+            padding-top: 18%;
             font-family: fantasy;
+
             color: #d8dadb;
+        }
+        @media only screen and (max-width: 414px) {
+            h1{
+                font-size: inherit;
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -29,13 +35,48 @@
         "headline": "Club Baloncesto Pumarín",
         "url": "http://www.cbpumarin.es",
         "datePublished": "2018-05-09T12:00:00Z",
-        "description": "Club Baloncesto Pumarín, Gijón",
+        "description": "Club Baloncesto Pumarín",
         "image": [
-          "img/logo.jpg"
+          "http://www.cbpumarin.es/img/pumataLogo.png"
         ]
         "author": {
           "@type": "Person",
           "name": "Antonio Silván"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Google",
+          "url": "https://google.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "http://www.cbpumarin.es/img/pumataLogo.png",
+            "width": 600,
+            "height": 60
+          }
+        },
+        "about": {
+          "@context": "http://schema.org",
+          "@type": "SportsEvent",
+          "name": "Club Baloncesto Pumarín | 1999-2018 Gijón Asturias | Spain",
+          "startDate": "2018-05-09T02:30:00Z",
+          "location": {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Gijón",
+              "addressRegion": "Asturias"
+            },
+            "name": "Club Baloncesto Pumarín",
+            "description": "El Club Baloncesto Pumarín se funda oficialmente el 20 de Mayo de 1.999, aunque en la temporada 1998/99 ya disputa la competición federada como equipo de antiguos alumnos de la sección de baloncesto del Colegio J.G. Elisburu.",
+            "telephone": "0034686758730"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "http://www.cbpumarin.es/img/pumataLogo.png",
+          "height": 614,
+          "width": 922
         }
       }
     </script>
@@ -45,6 +86,45 @@
     <link rel="icon" type="image/png" href="img/pumataLogo.png" sizes="196x196">
 </head>
 <body>
-<h1>Próximamente la nueva web.</h1>
+
+    <header>Club Baloncesto Pumarín</header>
+
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+
+    <section>
+        <h1>WWF</h1>
+        <p>The World Wide Fund for Nature (WWF) is....</p>
+    </section>
+
+    <p>My family and I visited The Epcot center this summer.</p>
+
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+
+
+    <article>
+        <header>
+            <h1>What Does WWF Do?</h1>
+            <p>WWF's mission:</p>
+        </header>
+        <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+    </article>
+
+
+    <footer>
+        <p>Posted by: Antonio Silván</p>
+        <p>Contact information: <a href="mailto:cbpumarin@gmail.com">
+            cbpumarin@gmail.com</a>.</p>
+    </footer>
+
 </body>
 </html>
