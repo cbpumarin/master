@@ -28,20 +28,73 @@
     </style>
     <script type="application/ld+json">
         //
+      //
+        // The document referenced in mainEntityOfPage should be the same as the
+        // canonical link above.
+        //
+        // Also, please be aware that some platforms that use AMP HTML have
+        // further restrictions with regards to some schema components.
+        //
+        // For example:
+        //
+        //   * The leader "image" referenced in the markup below must appear
+        //   somewhere on the AMP HTML document itself.
+        //
+        //   * The URL for that "image" must precisely match the src of the
+        //   amp-img tag.
+        //
+        //   * All marked-up URLs should be absolute.
+        //
+        //   * The "logo" dimensions must not exceed 600x60.
+        //
       {
         "@context": "http://schema.org",
         "@type": "NewsArticle",
-        "mainEntityOfPage": "http://www.cbpumarin.es",
-        "headline": "Club Baloncesto Pumarín",
-        "url": "http://www.cbpumarin.es",
-        "datePublished": "2018-05-09T12:00:00Z",
-        "description": "Club Baloncesto Pumarín, Gijón",
-        "image": [
-          "img/logo.jpg"
-        ]
+        "mainEntityOfPage": "http://example.ampproject.org/sports-article-metadata.html",
+        "headline": "The Toronto Wildcats defeat the San Jose Stars 4-2",
+        "url": "https://intense-heat-6570.firebaseapp.com/index.html",
+        "datePublished": "2016-04-01T12:00:00Z",
+        "dateModified": "2016-04-01T12:00:00Z",
+        "description": "The Toronto Wildcats defeat the San Jose Stars 4-2",
         "author": {
           "@type": "Person",
-          "name": "Antonio Silván"
+          "name": "Jeff Kingyens"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Google",
+          "url": "https://google.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://intense-heat-6570.firebaseapp.com/logo.png",
+            "width": 600,
+            "height": 60
+          }
+        },
+        "about": {
+          "@context": "http://schema.org",
+          "@type": "SportsEvent",
+          "name": "Toronto Wildcats vs San Jose Stars | 2015-2015 Regular Season | FHL",
+          "startDate": "2016-04-01T02:30:00Z",
+          "location": {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "The SAP Center",
+              "addressRegion": "CA",
+              "streetAddress": "525 W Santa Clara St, San Jose, CA 95113, United States"
+            },
+            "name": "The SAP Center",
+            "description": "an indoor arena located in San Jose, California. Its primary tenant is the San Jose Sharks of the National Hockey League, for which the arena has earned the nickname \"The Shark Tank\"",
+            "telephone": "850-648-4200"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Ice_Hockey_sharks_ducks.jpg",
+          "height": 614,
+          "width": 922
         }
       }
     </script>
