@@ -83,7 +83,13 @@
     <!-- this style tag is required -->
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <link rel="icon" type="image/png" href="img/pumataLogo.png" sizes="196x196">
+
+    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
+    <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+    <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
+    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+
+    <link rel="icon" type="image/png" href="img/favicon.jpeg" sizes="196x196">
 </head>
 <body>
 
@@ -98,8 +104,42 @@
 
 
     <section>
-        <h1>WWF</h1>
-        <p>The World Wide Fund for Nature (WWF) is....</p>
+        <amp-twitter width="500"
+                     height="583"
+                     layout="responsive"
+                     data-tweetid="638793490521001985">
+        </amp-twitter>
+    </section>
+
+    <section>
+        <amp-instagram data-shortcode="fBwFP"
+                       width="320"
+                       height="392"
+                       layout="responsive">
+        </amp-instagram>
+    </section>
+
+    <section>
+        <amp-instagram data-shortcode="fBwFP"
+                       width="320"
+                       height="392"
+                       layout="responsive">
+        </amp-instagram>
+
+        <amp-facebook width="476" height="316"
+                      layout="responsive"
+                      data-embed-as="video"
+                      data-href="https://www.facebook.com/nasaearth/videos/10155187938052139">
+        </amp-facebook>
+
+    </section>
+
+    <section>
+        <amp-youtube data-videoid="WrpkFROqR0Q"
+                     layout="responsive"
+                     width="560"
+                     height="315">
+        </amp-youtube>
     </section>
 
     <p>My family and I visited The Epcot center this summer.</p>
@@ -107,6 +147,14 @@
     <aside>
         <h4>Epcot Center</h4>
         <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+        <amp-ad width="300"
+                height="250"
+                type="a9"
+                data-aax_size="300x250"
+                data-aax_pubname="test123"
+                data-aax_src="302">
+            <div placeholder>Have a great day!</div>
+        </amp-ad>
     </aside>
 
 
