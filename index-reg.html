@@ -26,7 +26,7 @@
             }
         }
     </style>
-    <script type="application/ld+json">
+        <script type="application/ld+json">
         //
       {
         "@context": "http://schema.org",
@@ -89,6 +89,12 @@
     <script async custom-element="amp-facebook" src="https://cdn.ampproject.org/v0/amp-facebook-0.1.js"></script>
     <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 
+
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js"></script>
+
+
+
     <link rel="icon" type="image/png" href="img/favicon.jpeg" sizes="196x196">
 </head>
 <body>
@@ -96,6 +102,19 @@
     <header>Club Baloncesto Pumarín</header>
 
     <nav>
+
+        <amp-list height="24"
+                  layout="fixed-height"
+                  src="/json/mainMenu.json"
+                  class="m1">
+            <template type="amp-mustache">
+                Price: ${{price}}
+            </template>
+        </amp-list>
+
+
+
+
         <a href="/html/">HTML</a> |
         <a href="/css/">CSS</a> |
         <a href="/js/">JavaScript</a> |

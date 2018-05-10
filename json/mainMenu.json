@@ -1,0 +1,28 @@
+{
+  "menuList": {
+    "item": {
+      "position": "1",
+      "value": "Inicio"
+    },
+    "item": {
+      "position": "2",
+      "value": "Plantillas"
+    },
+    "item": {
+      "position": "3",
+      "value": ""
+    },
+    "item": {
+      "position": "4",
+      "value": ""
+    },
+    "item": {
+      "position": "5",
+      "value": ""
+    },
+    "item": {
+      "position": "6",
+      "value": "Club"
+    }
+  }
+}
