@@ -1,195 +1,144 @@
 <!doctype html>
-<html AMP lang="es">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>Club Baloncesto Pumarín</title>
     <link rel="canonical" href="http://www.cbpumarin.es">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <style amp-custom>
         body  {
             background-size: 100%;
             background-color: #000000;
             color: #d8dadb;
         }
-        #header{
-            width: 100%;
-            height: 8em;
-        }
-        #header img{
-            float:right;
-            height: 100%;
-            padding-left: 30%;
-        }
-        #header h1{
-            float:left;
-            padding-left: 30%;
-            padding-top: 2%;
-        }
-        #left-content{
-            width: 30%;
-            float: left;
-        }
-        #left-content img{
-            width: 100%;
-        }
-        #right-content{
-            width: 70%;
-            float: left;
-        }
-        #menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
 
-        #menu li {
-            float: left;
+        h1 { color: #b48608; font-family: 'Droid serif', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center; }        .row .col-3 img{
+            width: 100%;
+            text-align: left;
         }
-
-        #menu li a {
-            display: block;
+        .row .col img {
+            width: 8em;
+            text-align: right;
+        }
+        nav ul li a{
             color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
         }
-
-        /* Change the link color to #111 (black) on hover */
-        #menu li a:hover {
-            background-color: #111;
-        }
-
-
-
-
-        @media only screen and (max-width: 414px) {
-            h1{
-                font-size: inherit;
-            }
+        .list-group-item-dark{
+            color: white;
+            background-color: black;
         }
     </style>
-    <script type="application/ld+json">
-        //
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "mainEntityOfPage": "http://www.cbpumarin.es",
-        "headline": "Club Baloncesto Pumarín",
-        "url": "http://www.cbpumarin.es",
-        "datePublished": "2018-05-09T12:00:00Z",
-        "description": "Club Baloncesto Pumarín",
-        "image": [
-          "http://www.cbpumarin.es/img/pumataLogo.png"
-        ]
-        "author": {
-          "@type": "Person",
-          "name": "Antonio Silván"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Google",
-          "url": "https://google.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "http://www.cbpumarin.es/img/pumataLogo.png",
-            "width": 600,
-            "height": 60
-          }
-        },
-        "about": {
-          "@context": "http://schema.org",
-          "@type": "SportsEvent",
-          "name": "Club Baloncesto Pumarín | 1999-2018 Gijón Asturias | Spain",
-          "startDate": "2018-05-09T02:30:00Z",
-          "location": {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Gijón",
-              "addressRegion": "Asturias"
-            },
-            "name": "Club Baloncesto Pumarín",
-            "description": "El Club Baloncesto Pumarín se funda oficialmente el 20 de Mayo de 1.999, aunque en la temporada 1998/99 ya disputa la competición federada como equipo de antiguos alumnos de la sección de baloncesto del Colegio J.G. Elisburu.",
-            "telephone": "0034686758730"
-          }
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "http://www.cbpumarin.es/img/pumataLogo.png",
-          "height": 614,
-          "width": 922
-        }
-      }
-    </script>
-    <!-- this style tag is required -->
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
     <link rel="icon" type="image/png" href="img/pumataLogo.png" sizes="196x196">
 </head>
 <body>
+    <div class="container-fluid">
 
-    <div id="header">
-        <h1>Club Baloncesto Pumarín</h1>
-        <img src="./celebracion/img/canasta.jpeg">
-    </div>
-    <div id="left-content">
-        <img src="./celebracion/img/Celebracion.png">
-    </div>
-    <div id="right-content">
-        <div id="menu">
-            <ul>
-                <li><a class="active" href="#home">Inicio</a></li>
-                <li><a href="./celebracion/aicmas.html">Equipos 3x3 <br/> AIC Masculino</a></li>
-                <li><a href="./celebracion/aicfem.html">Equipos 3x3 <br/> AIC Femenino</a></li>
-                <li><a href="./celebracion/jsvmas.html">Equipos 3x3 <br/>JSV Masculino</a></li>
-                <li><a href="./celebracion/partconcur.html">Participantes <br/> concursos de Triples</a></li>
-                <li><a href="./celebracion/horarios.html">Horarios partidos</a></li>
-                <li><a href="./celebracion/resultados.html">Clasificaciones y resultados</a></li>
-            </ul>
+        <div class="row">
+            <div class="col">
+                <img src="./celebracion/img/CB_Pumarín.png">
+            </div>
+            <div class="col">
+                <h1>Club Baloncesto Pumarín</h1>
+            </div>
+            <div class="col">
+                <img style="float: right;" src="./celebracion/img/canasta.jpeg">
+            </div>
         </div>
-        <div class="content">
 
-            <h1 style="color:red">IMPORTANTE: No os olvideis de traer las 2 equipaciones del club.</h1>
-            <ol type="I">
-                <li>
-                    <h2>Reglas del 3x3</h2>
-                    <ul>
-                        <li>Los 3x3 serán a 10 puntos o 12 minutos de juego, contando canastas de 2 y de 3 puntos.</li>
-                        <li>Los partidos serán arbitrados por los propios jugadores, siendo jueces de canasta los que decidan en caso de necesitarlo.</li>
-                        <li>La competición es en forma de liguilla, se jugaran 5 o 3 partidos (dependiendo de la categoria) por cada equipo,
-                            jugando una final los 2 primeros equipos clasificados de la liguilla.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Concursos de triples</h2>
-                    <ul>
-                        <li>Cada jugador participante tendrá que realizar 3 tiros desde cada una de las 5 posiciones de tiro.</li>
-                        <li>El jugador tendrá un minuto para realizar todos los tiros..</li>
-                        <li>Los jugadores participantes ayudarán a pasar los balones a sus compañeros rivales</li>
-                        <li>En caso de haber empate tras haber tirado todos los participantes, se hara una ronda de desempate.</li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Concurso de tiro Mixto</h2>
-                    <ul>
-                        <li>Los 9 ganadores de los concursos de triples, escogeran un jugador por categoría
-                            (alevín, infantil, cadete, junior, senior y un veterano o un padre).
-                            Creando 6 equipos de 6 tiradores, 3 chicos y 3 chicas.</li>
-                        <li>Cada equipo tendra una ronda de tiro de 1 minuto, en la cual, cada integrante escogerá una posición de tiro, de las 6 existentes.</li>
-                        <li>La ronda empezara con el jugador en la posición mas cercana al aro y debera encestar para pasarle el balón al siguiente jugador.</li>
-                        <li>Si el jugador falla deberá coger su propio rebote.</li>
-                        <li>Cuando el jugador de la ultima posición enceste el balón, le pasará el balón al primer jugador que inició la ronda
-                            y seguiran tirando hasta que se acabe el tiempo</li>
-                        <li>Ganará el equipo que mas puntos anote.</li>
-                        <li>En caso de empate se hara una nueva ronda para desempatar de 30 segundos.</li>
-                    </ul>
-                </li>
-            </ol>
 
+        <div class="row">
+            <div class="col-3">
+                <img src="./celebracion/img/Celebracion.png">
+            </div>
+            <div class="col-9">
+
+
+                <nav class="navbar navbar-dark bg-dark list-group-item">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./celebracion/aicmas.html">Equipos 3x3 <br/> AIC Masculino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./celebracion/aicfem.html">Equipos 3x3 <br/> AIC Femenino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./celebracion/jsvmas.html">Equipos 3x3 <br/>JSV Masculino</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./celebracion/partconcur.html">Participantes <br/> concursos de Triples</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./celebracion/horarios.html">Horarios partidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./celebracion/resultados.html">Clasificaciones <br/> resultados</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+
+                <div class="content">
+
+                    <p></p>
+                    <div class="alert alert-danger" role="alert">
+                        <h4 class="alert-heading"> IMPORTANTE:</h4>
+                        <p>No os olvideis de traer las 2 equipaciones del club.</p>
+                    </div>
+
+
+                    <ol type="I" class="list-group">
+                        <li class="list-group-item list-group-item-dark">
+                            <h2>Reglas del 3x3</h2>
+                            <ul>
+                                <li>Los 3x3 serán a 10 puntos o 12 minutos de juego, contando canastas de 2 y de 3 puntos.</li>
+                                <li>Los partidos serán arbitrados por los propios jugadores, siendo jueces de canasta los que decidan en caso de necesitarlo.</li>
+                                <li>La competición es en forma de liguilla, se jugaran 5 o 3 partidos (dependiendo de la categoria) por cada equipo,
+                                    jugando una final los 2 primeros equipos clasificados de la liguilla.</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item list-group-item-dark">
+                            <h2>Concursos de triples</h2>
+                            <ul>
+                                <li>Cada jugador participante tendrá que realizar 3 tiros desde cada una de las 5 posiciones de tiro.</li>
+                                <li>El jugador tendrá un minuto para realizar todos los tiros..</li>
+                                <li>Los jugadores participantes ayudarán a pasar los balones a sus compañeros rivales</li>
+                                <li>En caso de haber empate tras haber tirado todos los participantes, se hara una ronda de desempate.</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item list-group-item-dark">
+                            <h2>Concurso de tiro Mixto</h2>
+                            <ul>
+                                <li>Los 9 ganadores de los concursos de triples, escogeran un jugador por categoría
+                                    (alevín, infantil, cadete, junior, senior y un veterano o un padre).
+                                    Creando 6 equipos de 6 tiradores, 3 chicos y 3 chicas.</li>
+                                <li>Cada equipo tendra una ronda de tiro de 1 minuto, en la cual, cada integrante escogerá una posición de tiro, de las 6 existentes.</li>
+                                <li>La ronda empezara con el jugador en la posición mas cercana al aro y debera encestar para pasarle el balón al siguiente jugador.</li>
+                                <li>Si el jugador falla deberá coger su propio rebote.</li>
+                                <li>Cuando el jugador de la ultima posición enceste el balón, le pasará el balón al primer jugador que inició la ronda
+                                    y seguiran tirando hasta que se acabe el tiempo</li>
+                                <li>Ganará el equipo que mas puntos anote.</li>
+                                <li>En caso de empate se hara una nueva ronda para desempatar de 30 segundos.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

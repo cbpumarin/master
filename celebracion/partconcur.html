@@ -1,157 +1,94 @@
 <!doctype html>
-<html AMP lang="es">
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>Club Baloncesto Pumarín</title>
     <link rel="canonical" href="http://www.cbpumarin.es">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <style amp-custom>
         body  {
             background-size: 100%;
             background-color: #000000;
             color: #d8dadb;
         }
-        #header{
-            width: 100%;
-            height: 8em;
-        }
-        #header img{
-            float:right;
-            height: 100%;
-            padding-left: 30%;
-        }
-        #header h1{
-            float:left;
-            padding-left: 30%;
-            padding-top: 2%;
-        }
-        #left-content{
-            width: 30%;
-            float: left;
-        }
-        #left-content img{
-            width: 100%;
-        }
-        #right-content{
-            width: 70%;
-            float: left;
-        }
-        #menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
 
-        #menu li {
-            float: left;
+        h1 { color: #b48608; font-family: 'Droid serif', serif; font-size: 36px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center; }        .row .col-3 img{
+                                                                                                                                                                                             width: 100%;
+                                                                                                                                                                                             text-align: left;
+                                                                                                                                                                                         }
+        .row .col img {
+            width: 8em;
+            text-align: right;
         }
-
-        #menu li a {
-            display: block;
+        nav ul li a{
             color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
         }
-
-        /* Change the link color to #111 (black) on hover */
-        #menu li a:hover {
-            background-color: #111;
-        }
-
-
-
-
-        @media only screen and (max-width: 414px) {
-            h1{
-                font-size: inherit;
-            }
+        .list-group-item-dark{
+            color: white;
+            background-color: black;
         }
     </style>
-    <script type="application/ld+json">
-        //
-      {
-        "@context": "http://schema.org",
-        "@type": "NewsArticle",
-        "mainEntityOfPage": "http://www.cbpumarin.es",
-        "headline": "Club Baloncesto Pumarín",
-        "url": "http://www.cbpumarin.es",
-        "datePublished": "2018-05-09T12:00:00Z",
-        "description": "Club Baloncesto Pumarín",
-        "image": [
-          "http://www.cbpumarin.es/img/pumataLogo.png"
-        ]
-        "author": {
-          "@type": "Person",
-          "name": "Antonio Silván"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Google",
-          "url": "https://google.com",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "http://www.cbpumarin.es/img/pumataLogo.png",
-            "width": 600,
-            "height": 60
-          }
-        },
-        "about": {
-          "@context": "http://schema.org",
-          "@type": "SportsEvent",
-          "name": "Club Baloncesto Pumarín | 1999-2018 Gijón Asturias | Spain",
-          "startDate": "2018-05-09T02:30:00Z",
-          "location": {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Gijón",
-              "addressRegion": "Asturias"
-            },
-            "name": "Club Baloncesto Pumarín",
-            "description": "El Club Baloncesto Pumarín se funda oficialmente el 20 de Mayo de 1.999, aunque en la temporada 1998/99 ya disputa la competición federada como equipo de antiguos alumnos de la sección de baloncesto del Colegio J.G. Elisburu.",
-            "telephone": "0034686758730"
-          }
-        },
-        "image": {
-          "@type": "ImageObject",
-          "url": "http://www.cbpumarin.es/img/pumataLogo.png",
-          "height": 614,
-          "width": 922
-        }
-      }
-    </script>
-    <!-- this style tag is required -->
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
     <link rel="icon" type="image/png" href="img/pumataLogo.png" sizes="196x196">
 </head>
 <body>
+<div class="container-fluid">
 
-    <div id="header">
-        <h1>Club Baloncesto Pumarín</h1>
-        <img src="./img/canasta.jpeg">
-    </div>
-    <div id="left-content">
-        <img src="./img/Celebracion.png">
-    </div>
-    <div id="right-content">
-        <div id="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="aicmas.html">Equipos 3x3 <br/> AIC Masculino</a></li>
-                <li><a href="aicfem.html">Equipos 3x3 <br/> AIC Femenino</a></li>
-                <li><a href="jsvmas.html"">Equipos 3x3 <br/>JSV Masculino</a></li>
-                <li><a class="active" href="partconcur.html">Participantes <br/> concursos de Triples</a></li>
-                <li><a href="horarios.html">Horarios partidos</a></li>
-                <li><a href="resultados.html">Clasificaciones y resultados</a></li>
-            </ul>
+    <div class="row">
+        <div class="col">
+            <img src="img/CB_Pumarín.png">
         </div>
-        <div class="content">
-            <ol type="I">
+        <div class="col">
+            <h1>Club Baloncesto Pumarín</h1>
+        </div>
+        <div class="col">
+            <img style="float: right;" src="img/canasta.jpeg">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-3">
+            <img src="img/Celebracion.png">
+        </div>
+        <div class="col-9">
+
+
+            <nav class="navbar navbar-dark bg-dark list-group-item">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aicmas.html">Equipos 3x3 <br/> AIC Masculino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aicfem.html">Equipos 3x3 <br/> AIC Femenino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jsvmas.html">Equipos 3x3 <br/>JSV Masculino</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="partconcur.html">Participantes <br/> concursos de Triples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="horarios.html">Horarios partidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resultados.html">Clasificaciones <br/> resultados</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content">
+
+
+
+
+
+
+
                 <h1>Participantes en el concurso de 3 puntos</h1>
 
 
@@ -200,7 +137,18 @@
 
 
 
+
+
+
+            </div>
         </div>
     </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
