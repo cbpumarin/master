@@ -30,11 +30,14 @@
             color: white;
             background-color: black;
         }
-        @media only screen and (max-width: 600px) {
+        @media (max-width: 800px) {
             .row .col-3 img{
                 display: none;
             }
             .row .col img{
+                display: none;
+            }
+            #left{
                 display: none;
             }
         }
@@ -59,7 +62,7 @@
 
 
     <div class="row">
-        <div class="col-3">
+        <div id="left" class="col-3">
             <img src="img/Celebracion.png">
         </div>
         <div class="col-9">
